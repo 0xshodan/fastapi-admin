@@ -46,6 +46,11 @@ class Image(Display):
     def __init__(self, width: Optional[str] = None, height: Optional[str] = None):
         super().__init__(width=width, height=height)
 
+class Url(Display):
+    template = "widgets/displays/url.html"
+
+    def __init__(self, width: Optional[str] = None, height: Optional[str] = None):
+        super().__init__(width=width, height=height)
 
 class Json(Display):
     template = "widgets/displays/json.html"
